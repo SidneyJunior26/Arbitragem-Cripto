@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{7583834E-FCE4-4154-AB09-3B9A9EFED0AB}|https">
+  <MonoDevelop.Ide.ItemProperties.Arbitragem.API FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Arbitragem.Core FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Arbitragem.Application FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Arbitragem.Infrastructure/Class1.cs">
+    <Files>
+      <File FileName="Arbitragem.Core/Class1.cs" Line="1" Column="1" />
+      <File FileName="Arbitragem.Application/Class1.cs" Line="1" Column="1" />
+      <File FileName="Arbitragem.Infrastructure/Class1.cs" Line="8" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Arbitragem" expanded="True">
+            <Node name="Arbitragem.API" expanded="True" />
+            <Node name="Arbitragem.Application" expanded="True" />
+            <Node name="Arbitragem.Core" expanded="True" />
+            <Node name="Arbitragem.Infrastructure">
+              <Node name="Class1.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Arbitragem.Infrastructure FirstBuild="True" />
+</Properties>

@@ -1,0 +1,63 @@
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.csproj.AssemblyReference.cache
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.AssemblyInfoInputs.cache
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.AssemblyInfo.cs
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.csproj.CoreCompileInputs.cache
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Loader.Application.deps.json
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Loader.Application.dll
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Loader.Application.pdb
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Loader.Core.dll
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Loader.Core.pdb
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.A.916972E8.Up2Date
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.dll
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/obj/Debug/net8.0/refint/Loader.Application.dll
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.pdb
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/obj/Debug/net8.0/ref/Loader.Application.dll
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Loader.Infrastructure.dll
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Loader.Infrastructure.pdb
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Solution.Core.dll
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Solution.Core.pdb
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Solution.Infrastructure.dll
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Solution.Infrastructure.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/bin/Debug/net8.0/Loader.Application.deps.json
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/bin/Debug/net8.0/Loader.Application.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/bin/Debug/net8.0/Loader.Application.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/bin/Debug/net8.0/Loader.Core.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/bin/Debug/net8.0/Loader.Infrastructure.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/bin/Debug/net8.0/Solution.Core.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/bin/Debug/net8.0/Solution.Infrastructure.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/bin/Debug/net8.0/Loader.Core.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/bin/Debug/net8.0/Loader.Infrastructure.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/bin/Debug/net8.0/Solution.Core.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/bin/Debug/net8.0/Solution.Infrastructure.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.csproj.AssemblyReference.cache
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.AssemblyInfoInputs.cache
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.AssemblyInfo.cs
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.csproj.CoreCompileInputs.cache
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/obj/Debug/net8.0/Loader.A.916972E8.Up2Date
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/obj/Debug/net8.0/refint/Loader.Application.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Application/obj/Debug/net8.0/ref/Loader.Application.dll
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Loader.Application.deps.json
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Loader.Application.dll
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Loader.Application.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Loader.Core.dll
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Loader.Infrastructure.dll
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Solution.Core.dll
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Solution.Infrastructure.dll
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Loader.Core.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Loader.Infrastructure.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Solution.Core.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/bin/Debug/net8.0/Solution.Infrastructure.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.csproj.AssemblyReference.cache
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.AssemblyInfoInputs.cache
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.AssemblyInfo.cs
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.csproj.CoreCompileInputs.cache
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.A.916972E8.Up2Date
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.dll
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/obj/Debug/net8.0/refint/Loader.Application.dll
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/obj/Debug/net8.0/Loader.Application.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src - cópia/Worker Service/Arbitragem.Application/obj/Debug/net8.0/ref/Loader.Application.dll

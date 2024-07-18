@@ -1,0 +1,11 @@
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Core/bin/Debug/net8.0/Arbitragem.Core.deps.json
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Core/bin/Debug/net8.0/Arbitragem.Core.dll
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Core/bin/Debug/net8.0/Arbitragem.Core.pdb
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Core/obj/Debug/net8.0/Arbitragem.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Core/obj/Debug/net8.0/Arbitragem.Core.AssemblyInfoInputs.cache
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Core/obj/Debug/net8.0/Arbitragem.Core.AssemblyInfo.cs
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Core/obj/Debug/net8.0/Arbitragem.Core.csproj.CoreCompileInputs.cache
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Core/obj/Debug/net8.0/Arbitragem.Core.dll
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Core/obj/Debug/net8.0/refint/Arbitragem.Core.dll
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Core/obj/Debug/net8.0/Arbitragem.Core.pdb
+/Users/sidneyjunior/Projects/Arbitragem/Worker Service/Arbitragem.Core/obj/Debug/net8.0/ref/Arbitragem.Core.dll

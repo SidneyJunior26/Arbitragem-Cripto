@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Serices\Interfaces\" />
+    <None Remove="Serices\Implementations\" />
+    <None Remove="Commands\" />
+    <None Remove="Queries\" />
+    <None Remove="Queries\GetCoins\" />
+    <None Remove="Commands\SaveCoins\" />
+    <None Remove="Queries\GetOrderBooks\" />
+    <None Remove="Commands\SaveOrderBooks\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="Queries\" />
+    <Folder Include="Queries\GetCoins\" />
+    <Folder Include="Commands\SaveCoins\" />
+    <Folder Include="Queries\GetOrderBooks\" />
+    <Folder Include="Commands\SaveOrderBooks\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.3.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Arbitragem.Core\Loader.Core.csproj" />
+    <ProjectReference Include="..\Arbitragem.Infrastructure\Loader.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

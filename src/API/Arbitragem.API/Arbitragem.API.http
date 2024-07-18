@@ -1,0 +1,7 @@
+﻿@Arbitragem.API_HostAddress = http://localhost:5056
+
+GET {{Arbitragem.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+

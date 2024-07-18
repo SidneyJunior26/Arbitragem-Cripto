@@ -1,0 +1,348 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Application/Loader.Application.csproj": {}
+  },
+  "projects": {
+    "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Core/Solution.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Core/Solution.Core.csproj",
+        "projectName": "Solution.Core",
+        "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Core/Solution.Core.csproj",
+        "packagesPath": "/Users/sidneyjunior/.nuget/packages/",
+        "outputPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sidneyjunior/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Infrastructure/Solution.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Infrastructure/Solution.Infrastructure.csproj",
+        "projectName": "Solution.Infrastructure",
+        "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Infrastructure/Solution.Infrastructure.csproj",
+        "packagesPath": "/Users/sidneyjunior/.nuget/packages/",
+        "outputPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sidneyjunior/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Core/Solution.Core.csproj": {
+                "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Core/Solution.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Application/Loader.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Application/Loader.Application.csproj",
+        "projectName": "Loader.Application",
+        "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Application/Loader.Application.csproj",
+        "packagesPath": "/Users/sidneyjunior/.nuget/packages/",
+        "outputPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sidneyjunior/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Core/Loader.Core.csproj": {
+                "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Core/Loader.Core.csproj"
+              },
+              "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Infrastructure/Loader.Infrastructure.csproj": {
+                "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Infrastructure/Loader.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.3.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Core/Loader.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Core/Loader.Core.csproj",
+        "projectName": "Loader.Core",
+        "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Core/Loader.Core.csproj",
+        "packagesPath": "/Users/sidneyjunior/.nuget/packages/",
+        "outputPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sidneyjunior/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Core/Solution.Core.csproj": {
+                "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Core/Solution.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Infrastructure/Loader.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Infrastructure/Loader.Infrastructure.csproj",
+        "projectName": "Loader.Infrastructure",
+        "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Infrastructure/Loader.Infrastructure.csproj",
+        "packagesPath": "/Users/sidneyjunior/.nuget/packages/",
+        "outputPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sidneyjunior/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Core/Solution.Core.csproj": {
+                "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Core/Solution.Core.csproj"
+              },
+              "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Infrastructure/Solution.Infrastructure.csproj": {
+                "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Infrastructure/Solution.Infrastructure.csproj"
+              },
+              "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Core/Loader.Core.csproj": {
+                "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Core/Loader.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
