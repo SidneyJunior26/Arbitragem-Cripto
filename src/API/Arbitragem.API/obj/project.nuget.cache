@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dayTBGICzJhzm3E0tNQ0OvZBxC5nvOU2m48tqUq8wm6rgSfzp7b5oPq3qvaOKLDuB82R39mqXa4KuuIQJysEGQ==",
+  "dgSpecHash": "hgj/3RPmUyuTUIT6hWMChqiXcxiTTwn8O17H4QUaWH98Z1laOgd9u7Z9im1UD/DcEqpR45Skm8O633ISRAs37A==",
   "success": true,
-  "projectFilePath": "/Users/sidneyjunior/Projects/Arbitragem/Arbitragem.API/Arbitragem.API.csproj",
+  "projectFilePath": "/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.API/Arbitragem.API.csproj",
   "expectedPackageFiles": [
     "/Users/sidneyjunior/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",

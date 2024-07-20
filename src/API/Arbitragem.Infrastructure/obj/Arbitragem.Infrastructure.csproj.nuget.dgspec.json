@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sidneyjunior/Projects/Arbitragem/Arbitragem.Infrastructure/Arbitragem.Infrastructure.csproj": {}
+    "/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/Arbitragem.Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/sidneyjunior/Projects/Arbitragem/Arbitragem.Infrastructure/Arbitragem.Infrastructure.csproj": {
+    "/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/Arbitragem.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sidneyjunior/Projects/Arbitragem/Arbitragem.Infrastructure/Arbitragem.Infrastructure.csproj",
+        "projectUniqueName": "/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/Arbitragem.Infrastructure.csproj",
         "projectName": "Arbitragem.Infrastructure",
-        "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/Arbitragem.Infrastructure/Arbitragem.Infrastructure.csproj",
+        "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/Arbitragem.Infrastructure.csproj",
         "packagesPath": "/Users/sidneyjunior/.nuget/packages/",
-        "outputPath": "/Users/sidneyjunior/Projects/Arbitragem/Arbitragem.Infrastructure/obj/",
+        "outputPath": "/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sidneyjunior/.nuget/NuGet/NuGet.Config"

@@ -11,4 +11,14 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Arbitrage_Calculator.Application\Arbitrage_Calculator.Application.csproj" />
+    <ProjectReference Include="..\Arbitrage_Calculator.Infrastructure\Arbitrage_Calculator.Infrastructure.csproj" />
+    <ProjectReference Include="Arbitrage-Calculator.Application\Arbitrage-Calculator.Application.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Shared\Solution.Infrastructure\Solution.Infrastructure.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

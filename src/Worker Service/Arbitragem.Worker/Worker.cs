@@ -29,7 +29,7 @@ public class Worker : BackgroundService
                     _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 }
 
-                var getOrderBooksQuery = new GetOrderBooksQuery(5);
+                var getOrderBooksQuery = new GetOrderBooksExchangesQuery(5);
                 List<OrderBook> orderBooksExchanges = new List<OrderBook>();
 
                 _logger.LogInformation("Getting Exchanges Order Books: {time}", DateTimeOffset.Now);

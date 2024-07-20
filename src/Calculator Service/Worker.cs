@@ -1,12 +1,16 @@
-﻿namespace Arbitrage_Calculator;
+﻿using Arbitrage_Calculator.Application.Services.Interfaces;
+
+namespace Arbitrage_Calculator;
 
 public class Worker : BackgroundService
 {
     private readonly ILogger<Worker> _logger;
+    private readonly IOpportunityService _opportunityService;
 
-    public Worker(ILogger<Worker> logger)
+    public Worker(ILogger<Worker> logger, IOpportunityService opportunityService)
     {
         _logger = logger;
+        _opportunityService = opportunityService;
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -17,6 +21,9 @@ public class Worker : BackgroundService
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
             }
+
+            await _opportunityService.GenerateOpportunities();
+            
             await Task.Delay(1000, stoppingToken);
         }
     }

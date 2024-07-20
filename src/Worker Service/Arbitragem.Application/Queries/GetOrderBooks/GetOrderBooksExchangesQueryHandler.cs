@@ -9,7 +9,7 @@ using Solution.Core.Enum;
 
 namespace ArbitraX.Application.Queries.GetOrderBooks;
 
-public class GetOrderBooksQueryHandler : IRequestHandler<GetOrderBooksQuery, List<OrderBook>>
+public class GetOrderBooksExchangesQueryHandler : IRequestHandler<GetOrderBooksExchangesQuery, List<OrderBook>>
 {
     private readonly ICoinRepository _coinRepository;
     private readonly IBinanceService _binanceService;
@@ -23,7 +23,7 @@ public class GetOrderBooksQueryHandler : IRequestHandler<GetOrderBooksQuery, Lis
 
     private double usdPrice;
 
-    public GetOrderBooksQueryHandler(IBinanceService binanceService, ICoinRepository coinRepository, IMercadoBitcoinService mercadoBitcoinService, IAwesomeService awesomeService, IExchangeRepository exchangeRepository, IMediator mediator)
+    public GetOrderBooksExchangesQueryHandler(IBinanceService binanceService, ICoinRepository coinRepository, IMercadoBitcoinService mercadoBitcoinService, IAwesomeService awesomeService, IExchangeRepository exchangeRepository, IMediator mediator)
     {
         _binanceService = binanceService;
         _coinRepository = coinRepository;
@@ -33,7 +33,7 @@ public class GetOrderBooksQueryHandler : IRequestHandler<GetOrderBooksQuery, Lis
         _mediator = mediator;
     }
 
-    public async Task<List<OrderBook>> Handle(GetOrderBooksQuery request, CancellationToken cancellationToken)
+    public async Task<List<OrderBook>> Handle(GetOrderBooksExchangesQuery request, CancellationToken cancellationToken)
     {
         var orderBooks = new List<OrderBook>();
 
@@ -91,6 +91,7 @@ public class GetOrderBooksQueryHandler : IRequestHandler<GetOrderBooksQuery, Lis
         var jObject = JObject.Parse(content);
 
         var orderBooks = new List<OrderBook>();
+        int index = 0;
         foreach (var bid in jObject["bids"])
         {
             double price;
@@ -101,9 +102,12 @@ public class GetOrderBooksQueryHandler : IRequestHandler<GetOrderBooksQuery, Lis
 
             var quantity = double.Parse(bid[1].ToString());
 
-            orderBooks.Add(new OrderBook(Side.BUY, price, quantity, exchangeId, coin.Id));
+            orderBooks.Add(new OrderBook(Side.BUY, index, price, quantity, exchangeId, coin.Id));
+
+            index++;
         }
 
+        index = 0;
         foreach (var ask in jObject["asks"])
         {
             double price;
@@ -115,7 +119,9 @@ public class GetOrderBooksQueryHandler : IRequestHandler<GetOrderBooksQuery, Lis
 
             var quantity = double.Parse(ask[1].ToString());
 
-            orderBooks.Add(new OrderBook(Side.SELL, price, quantity, exchangeId, coin.Id));
+            orderBooks.Add(new OrderBook(Side.SELL, index, price, quantity, exchangeId, coin.Id));
+
+            index++;
         }
 
         var saveOrderBooksCommand = new SaveOrderBooksCommand(orderBooks);

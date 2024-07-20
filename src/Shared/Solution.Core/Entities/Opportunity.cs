@@ -4,17 +4,17 @@ namespace Solution.Core.Entities;
 
 public class Opportunity : Entity
 {
-    public decimal LowerValue
+    public double LowerValue
     {
         get;
         private set;
     }
-    public decimal HighestValue
+    public double HighestValue
     {
         get;
         private set;
     }
-    public decimal DifferencePercentage
+    public double DifferencePercentage
     {
         get;
         private set;
@@ -51,7 +51,7 @@ public class Opportunity : Entity
     }
 
 
-    public Opportunity(decimal lowerValue, decimal highestValue, decimal differencePercentage, Guid coinId,
+    public Opportunity(double lowerValue, double highestValue, double differencePercentage, Guid coinId,
         Guid exchangeToBuyId, Guid exchangeToSellId)
     {
         Id = Guid.NewGuid();
@@ -67,7 +67,7 @@ public class Opportunity : Entity
         UpdateDate = DateTime.Now;
     }
 
-    public void Update(decimal lowerValue, decimal highestValue, decimal differencePercentage, Guid coinId,
+    public void Update(double lowerValue, double highestValue, double differencePercentage, Guid coinId,
         Guid exchangeToBuyId, Guid exchangeToSellId)
     {
         LowerValue = lowerValue;

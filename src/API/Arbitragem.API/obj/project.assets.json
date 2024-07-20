@@ -433,11 +433,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/sidneyjunior/Projects/Arbitragem/Arbitragem.API/Arbitragem.API.csproj",
+      "projectUniqueName": "/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.API/Arbitragem.API.csproj",
       "projectName": "Arbitragem.API",
-      "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/Arbitragem.API/Arbitragem.API.csproj",
+      "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.API/Arbitragem.API.csproj",
       "packagesPath": "/Users/sidneyjunior/.nuget/packages/",
-      "outputPath": "/Users/sidneyjunior/Projects/Arbitragem/Arbitragem.API/obj/",
+      "outputPath": "/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/sidneyjunior/.nuget/NuGet/NuGet.Config"

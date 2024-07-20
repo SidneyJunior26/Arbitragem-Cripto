@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sidneyjunior/Projects/Arbitragem/Arbitragem.Core/Arbitragem.Core.csproj": {}
+    "/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Core/Arbitragem.Core.csproj": {}
   },
   "projects": {
-    "/Users/sidneyjunior/Projects/Arbitragem/Arbitragem.Core/Arbitragem.Core.csproj": {
+    "/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Core/Arbitragem.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sidneyjunior/Projects/Arbitragem/Arbitragem.Core/Arbitragem.Core.csproj",
+        "projectUniqueName": "/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Core/Arbitragem.Core.csproj",
         "projectName": "Arbitragem.Core",
-        "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/Arbitragem.Core/Arbitragem.Core.csproj",
+        "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Core/Arbitragem.Core.csproj",
         "packagesPath": "/Users/sidneyjunior/.nuget/packages/",
-        "outputPath": "/Users/sidneyjunior/Projects/Arbitragem/Arbitragem.Core/obj/",
+        "outputPath": "/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sidneyjunior/.nuget/NuGet/NuGet.Config"

@@ -13,6 +13,10 @@ public class OrderBookConfigurations : IEntityTypeConfiguration<OrderBook>
         builder
             .HasKey(ob => ob.Id)
             .HasName("PRIMARY");
+        
+        builder
+            .Property(ob => ob.Order)
+            .IsRequired();
 
         builder
             .Property(ob => ob.Side)

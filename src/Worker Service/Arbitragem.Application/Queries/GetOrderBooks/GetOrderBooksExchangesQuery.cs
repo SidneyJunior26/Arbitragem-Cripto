@@ -3,9 +3,9 @@ using Solution.Core.Entities;
 
 namespace ArbitraX.Application.Queries.GetOrderBooks;
 
-public class GetOrderBooksQuery : IRequest<List<OrderBook>>
+public class GetOrderBooksExchangesQuery : IRequest<List<OrderBook>>
 {
-    public GetOrderBooksQuery(int limit)
+    public GetOrderBooksExchangesQuery(int limit)
     {
         Limit = limit;
     }

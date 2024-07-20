@@ -37,7 +37,7 @@ builder.Services.AddTransient<IBinanceService, BinanceService>();
 builder.Services.AddTransient<ICoinGeckoService, CoinGeckoService>();
 builder.Services.AddTransient<IMercadoBitcoinService, MercadoBitcoinService>();
 
-builder.Services.AddScoped<IRequestHandler<GetOrderBooksQuery, List<OrderBook>>, GetOrderBooksQueryHandler>();
+builder.Services.AddScoped<IRequestHandler<GetOrderBooksExchangesQuery, List<OrderBook>>, GetOrderBooksExchangesQueryHandler>();
 builder.Services.AddTransient<IRequestHandler<SaveOrderBooksCommand, Unit>, SaveOrderBooksCommandHandle>();
 
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
