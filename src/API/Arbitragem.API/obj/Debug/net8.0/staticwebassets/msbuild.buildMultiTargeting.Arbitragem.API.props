@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Arbitragem.API.props" />
+</Project>

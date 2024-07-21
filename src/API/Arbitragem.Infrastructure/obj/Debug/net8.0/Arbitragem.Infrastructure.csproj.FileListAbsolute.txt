@@ -1,0 +1,12 @@
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/bin/Debug/net8.0/Arbitragem.Infrastructure.deps.json
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/bin/Debug/net8.0/Arbitragem.Infrastructure.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/bin/Debug/net8.0/Arbitragem.Infrastructure.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/obj/Debug/net8.0/Arbitragem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/obj/Debug/net8.0/Arbitragem.Infrastructure.AssemblyInfoInputs.cache
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/obj/Debug/net8.0/Arbitragem.Infrastructure.AssemblyInfo.cs
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/obj/Debug/net8.0/Arbitragem.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/obj/Debug/net8.0/Arbitragem.Infrastructure.sourcelink.json
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/obj/Debug/net8.0/Arbitragem.Infrastructure.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/obj/Debug/net8.0/refint/Arbitragem.Infrastructure.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/obj/Debug/net8.0/Arbitragem.Infrastructure.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Infrastructure/obj/Debug/net8.0/ref/Arbitragem.Infrastructure.dll
