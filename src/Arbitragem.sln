@@ -23,7 +23,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solution.Infrastructure", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Arbitrage", "Arbitrage", "{64859418-AD56-4A9E-9024-00B4BE516545}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arbitrage-Calculator", "Calculator Service\Arbitrage-Calculator.csproj", "{C63013AE-E45D-4F7B-9AB4-158E620443B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arbitrage-Calculator", "Calculator Service\Arbitrage-Calculator.Worker\Arbitrage-Calculator.csproj", "{C63013AE-E45D-4F7B-9AB4-158E620443B8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{98159768-3886-490C-BB76-6528CA641E4C}"
 EndProject
@@ -35,9 +35,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arbitragem.Core", "API\Arbi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arbitragem.Infrastructure", "API\Arbitragem.Infrastructure\Arbitragem.Infrastructure.csproj", "{15CAF5F5-F406-4532-BC7E-53ACB164A6AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arbitrage_Calculator.Application", "Arbitrage_Calculator.Application\Arbitrage_Calculator.Application.csproj", "{C2829252-845D-435C-8EE4-CD1CEA665A25}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arbitrage_Calculator.Application", "Calculator Service\Arbitrage_Calculator.Application\Arbitrage_Calculator.Application.csproj", "{C2829252-845D-435C-8EE4-CD1CEA665A25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arbitrage_Calculator.Infrastructure", "Arbitrage_Calculator.Infrastructure\Arbitrage_Calculator.Infrastructure.csproj", "{5E44B515-EAA3-47DE-8C29-DAFFCCAF60A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arbitrage_Calculator.Infrastructure", "Calculator Service\Arbitrage_Calculator.Infrastructure\Arbitrage_Calculator.Infrastructure.csproj", "{5E44B515-EAA3-47DE-8C29-DAFFCCAF60A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
