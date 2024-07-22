@@ -17,6 +17,7 @@ public partial class ApplicationDbContext : DbContext
     public virtual DbSet<Network> Networks { get; set; }
     public virtual DbSet<OrderBook> OrderBooks { get; set; }
     public virtual DbSet<Opportunity> Opportunities { get; set; }
+    public virtual DbSet<AdmConfiguration> AdmConfigurations { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

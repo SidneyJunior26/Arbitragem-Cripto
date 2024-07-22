@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Arbitrage_Calculator.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+288d48108d2196f0cc6ae2d398e2d0e506a90eff")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7078cb9da9736d27cee35a81b1dfdfd795ede056")]
 [assembly: System.Reflection.AssemblyProductAttribute("Arbitrage_Calculator.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Arbitrage_Calculator.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

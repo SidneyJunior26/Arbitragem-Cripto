@@ -27,6 +27,16 @@ public class ExchangeConfigurations : IEntityTypeConfiguration<Exchange>
             .IsRequired();
 
         builder
+            .Property(e => e.ApiUrl)
+            .IsRequired();
+
+        builder
+            .Property(e => e.ApiKey);
+
+        builder
+            .Property(e => e.ApiSecretKey);
+
+        builder
             .HasMany(e => e.Opportunities)
             .WithOne(ob => ob.ExchangeToBuy)
             .HasForeignKey(ob => ob.ExchangeToBuyId);
@@ -37,4 +47,3 @@ public class ExchangeConfigurations : IEntityTypeConfiguration<Exchange>
             .HasForeignKey(ob => ob.ExchangeToSellId);
     }
 }
-
