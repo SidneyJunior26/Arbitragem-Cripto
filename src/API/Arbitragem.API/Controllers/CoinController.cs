@@ -58,7 +58,7 @@ public class CoinController : Controller
 
         var newCoin = await _coinService.CreateAsync(newCoinInputModel);
 
-        return Created($"coin/{newCoin.Id}", newCoin);
+        return Created($"coin?id={newCoin.Id}", newCoin);
     }
     
     [HttpPut]

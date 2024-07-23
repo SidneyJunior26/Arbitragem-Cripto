@@ -48,7 +48,7 @@ public class ExchangeController : Controller
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    [Authorize]
+    [Authorize(Policy = "Adm")]
     public async Task<IActionResult> Post(ExchangeInputModel exchangeInputModel)
     {
         var exchange = await _exchangeService.GetByNameAsync(exchangeInputModel.Name);
@@ -58,13 +58,13 @@ public class ExchangeController : Controller
 
         var newExchange = await _exchangeService.CreateAsync(exchangeInputModel);
 
-        return Created($"coin/{newExchange.Id}", newExchange);
+        return Created($"coin?id={newExchange.Id}", newExchange);
     }
     
     [HttpPut]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    [Authorize]
+    [Authorize(Policy = "Adm")]
     public async Task<IActionResult> Put(Guid id, ExchangeInputModel exchangeInputModel)
     {
         var exchange = await _exchangeService.GetByIdAsync(id);
@@ -80,7 +80,7 @@ public class ExchangeController : Controller
     [HttpDelete]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    [Authorize]
+    [Authorize(Policy = "Adm")]
     public async Task<IActionResult> Delete([FromQuery] Guid id)
     {
         var exchange = await _exchangeService.GetByIdAsync(id);

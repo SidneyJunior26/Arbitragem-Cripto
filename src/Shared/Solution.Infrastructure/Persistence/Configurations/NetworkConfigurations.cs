@@ -13,6 +13,9 @@ public class NetworkConfigurations : IEntityTypeConfiguration<Network>
         builder
             .HasKey(n => n.Id)
             .HasName("PRIMARY");
+        
+        builder.HasIndex(a => a.Id, "NETWORK_ID_INDEX")
+            .IsUnique();
 
         builder
             .Property(n => n.Name)

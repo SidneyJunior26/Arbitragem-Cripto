@@ -13,6 +13,9 @@ public class AdmConfigurations : IEntityTypeConfiguration<AdmConfiguration>
         builder
             .HasKey(c => c.Id)
             .HasName("PRIMARY");
+        
+        builder.HasIndex(a => a.Id, "ADM_CONFIG_ID_INDEX")
+            .IsUnique();
 
         builder
             .Property(c => c.RegisterDate)

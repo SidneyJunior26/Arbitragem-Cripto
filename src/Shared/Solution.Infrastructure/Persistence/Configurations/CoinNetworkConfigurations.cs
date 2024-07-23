@@ -15,6 +15,9 @@ public class CoinNetworkConfigurations : IEntityTypeConfiguration<CoinNetwork>
 
         builder.HasKey(cn => new { cn.CoinId, cn.NetworkId })
             .HasName("FOREIGN");
+        
+        builder.HasIndex(a => a.Id, "COIN_NETWORK_ID_INDEX")
+            .IsUnique();
 
         builder
             .Property(c => c.RegisterDate)

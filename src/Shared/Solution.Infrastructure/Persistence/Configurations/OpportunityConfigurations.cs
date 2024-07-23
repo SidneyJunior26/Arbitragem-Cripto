@@ -13,6 +13,9 @@ public class OpportunityConfigurations : IEntityTypeConfiguration<Opportunity>
         builder
             .HasKey(a => a.Id)
             .HasName("PRIMARY");
+        
+        builder.HasIndex(a => a.Id, "OPPORTUNITY_ID_INDEX")
+            .IsUnique();
 
         builder
             .Property(c => c.RegisterDate)

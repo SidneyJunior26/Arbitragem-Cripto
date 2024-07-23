@@ -13,6 +13,9 @@ public class ExchangeConfigurations : IEntityTypeConfiguration<Exchange>
         builder
             .HasKey(e => e.Id)
             .HasName("PRIMARY");
+        
+        builder.HasIndex(a => a.Id, "EXCHANGE_ID_INDEX")
+            .IsUnique();
 
         builder
             .Property(c => c.RegisterDate)

@@ -14,6 +14,9 @@ public class OrderBookConfigurations : IEntityTypeConfiguration<OrderBook>
             .HasKey(ob => ob.Id)
             .HasName("PRIMARY");
         
+        builder.HasIndex(a => a.Id, "ORDER_BOOK_ID_INDEX")
+            .IsUnique();
+        
         builder
             .Property(ob => ob.Order)
             .IsRequired();

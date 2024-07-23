@@ -13,6 +13,9 @@ public class CoinConfigurations : IEntityTypeConfiguration<Coin>
         builder
             .HasKey(c => c.Id)
             .HasName("PRIMARY");
+        
+        builder.HasIndex(a => a.Id, "COIN_ID_INDEX")
+            .IsUnique();
 
         builder
             .Property(c => c.RegisterDate)

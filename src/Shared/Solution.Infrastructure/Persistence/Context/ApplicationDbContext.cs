@@ -18,6 +18,7 @@ public partial class ApplicationDbContext : DbContext
     public virtual DbSet<OrderBook> OrderBooks { get; set; }
     public virtual DbSet<Opportunity> Opportunities { get; set; }
     public virtual DbSet<AdmConfiguration> AdmConfigurations { get; set; }
+    public virtual DbSet<User> Users { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
