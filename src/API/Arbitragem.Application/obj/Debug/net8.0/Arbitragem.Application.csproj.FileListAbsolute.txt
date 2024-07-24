@@ -10,3 +10,11 @@
 /Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Application/obj/Debug/net8.0/refint/Arbitragem.Application.dll
 /Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Application/obj/Debug/net8.0/Arbitragem.Application.pdb
 /Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Application/obj/Debug/net8.0/ref/Arbitragem.Application.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Application/bin/Debug/net8.0/Arbitragem.Infrastructure.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Application/bin/Debug/net8.0/Solution.Core.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Application/bin/Debug/net8.0/Solution.Infrastructure.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Application/bin/Debug/net8.0/Solution.Core.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Application/bin/Debug/net8.0/Arbitragem.Infrastructure.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Application/bin/Debug/net8.0/Solution.Infrastructure.pdb
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Application/obj/Debug/net8.0/Arbitragem.Application.csproj.AssemblyReference.cache
+/Users/sidneyjunior/Projects/Arbitragem/src/API/Arbitragem.Application/obj/Debug/net8.0/Arbitrag.B5288DB9.Up2Date

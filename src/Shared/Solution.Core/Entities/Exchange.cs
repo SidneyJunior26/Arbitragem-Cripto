@@ -7,7 +7,8 @@ public class Exchange : Entity
     public string ApiUrl { get; private set; }
     public string ApiKey { get; private set; }
     public string ApiSecretKey { get; private set; }
-    public List<Opportunity> Opportunities { get; set; }
+    public List<Opportunity> OpportunitiesToBuy { get; set; }
+    public List<Opportunity> OpportunitiesToSell { get; set; }
     public List<OrderBook> OrderBooks { get; set; }
 
     public Exchange(string name, string apiUrl, string apiKey, string apiSecretKey)

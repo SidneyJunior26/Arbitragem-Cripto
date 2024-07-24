@@ -40,12 +40,12 @@ public class ExchangeConfigurations : IEntityTypeConfiguration<Exchange>
             .Property(e => e.ApiSecretKey);
 
         builder
-            .HasMany(e => e.Opportunities)
+            .HasMany(e => e.OpportunitiesToBuy)
             .WithOne(ob => ob.ExchangeToBuy)
             .HasForeignKey(ob => ob.ExchangeToBuyId);
 
         builder
-            .HasMany(e => e.Opportunities)
+            .HasMany(e => e.OpportunitiesToSell)
             .WithOne(ob => ob.ExchangeToSell)
             .HasForeignKey(ob => ob.ExchangeToSellId);
     }

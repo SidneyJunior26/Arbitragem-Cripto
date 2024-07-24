@@ -52,8 +52,8 @@ public class OpportunityConfigurations : IEntityTypeConfiguration<Opportunity>
 
         builder
             .HasOne(a => a.ExchangeToBuy)
-            .WithMany(e => e.Opportunities)
-            .HasForeignKey(a => a.ExchangeToBuy);
+            .WithMany(e => e.OpportunitiesToBuy)
+            .HasForeignKey(a => a.ExchangeToBuyId);
 
         builder
             .Property(a => a.ExchangeToSellId)
@@ -61,8 +61,8 @@ public class OpportunityConfigurations : IEntityTypeConfiguration<Opportunity>
 
         builder
             .HasOne(a => a.ExchangeToSell)
-            .WithMany(e => e.Opportunities)
-            .HasForeignKey(a => a.ExchangeToBuyId);
+            .WithMany(e => e.OpportunitiesToSell)
+            .HasForeignKey(a => a.ExchangeToSellId);
     }
 }
 

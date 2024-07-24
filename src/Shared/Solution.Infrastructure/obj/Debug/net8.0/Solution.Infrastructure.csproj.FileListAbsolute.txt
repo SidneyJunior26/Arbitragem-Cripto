@@ -59,3 +59,5 @@
 /Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Infrastructure/obj/Debug/net8.0/refint/Solution.Infrastructure.dll
 /Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Infrastructure/obj/Debug/net8.0/Solution.Infrastructure.pdb
 /Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Infrastructure/obj/Debug/net8.0/ref/Solution.Infrastructure.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Infrastructure/bin/Debug/net8.0/Solution.Infrastructure.runtimeconfig.json
+/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Infrastructure/obj/Debug/net8.0/Solution.Infrastructure.genruntimeconfig.cache

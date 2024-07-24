@@ -19,7 +19,13 @@ public partial class ApplicationDbContext : DbContext
     public virtual DbSet<Opportunity> Opportunities { get; set; }
     public virtual DbSet<AdmConfiguration> AdmConfigurations { get; set; }
     public virtual DbSet<User> Users { get; set; }
-
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        if (!optionsBuilder.IsConfigured) {
+            optionsBuilder.UseMySql("Server=localhost; Port=8889; Database=ARBITRAX; Uid=root; Connection Timeout=300; default command timeout=300; ConvertZeroDateTime=True", Microsoft.EntityFrameworkCore.ServerVersion.Parse("5.7.34-mysql"));
+        }
+    }
+    
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
