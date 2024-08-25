@@ -2,7 +2,7 @@ using Solution.Core.Entities;
 
 namespace Arbitragem.Infrastructure.Persistence.Repositories.Interfaces;
 
-public interface IExchangeRepository : IRepositoryBase
+public interface IExchangeRepository
 {
     Task CreateAsync(Exchange exchange);
 
@@ -11,4 +11,6 @@ public interface IExchangeRepository : IRepositoryBase
     Task<Exchange> GetByNameAsync(string name);
 
     void Delete(Exchange exchange);
+
+    Task SaveChangesAsync();
 }

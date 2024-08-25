@@ -20,7 +20,7 @@ public class AdmConfigController : Controller
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    [Authorize(Policy = "Adm")]
+    [Authorize(Policy = "AdmPolicy")]
     public async Task<IActionResult> Get()
     {
         var admConfig = await _configurationService.GetAsync();
@@ -32,10 +32,10 @@ public class AdmConfigController : Controller
         return Ok(admConfig);
     }
     
-    [HttpGet]
+    [HttpPut]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    [Authorize(Policy = "Adm")]
+    [Authorize(Policy = "AdmPolicy")]
     public async Task<IActionResult> Put([FromQuery] Guid id, ConfigurationInputModel configurationInputModel)
     {
         var admConfig = await _configurationService.GetByIdAsync(id);

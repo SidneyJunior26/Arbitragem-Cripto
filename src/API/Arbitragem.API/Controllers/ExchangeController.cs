@@ -26,21 +26,21 @@ public class ExchangeController : Controller
         var exchanges = await _exchangeService.GetAllAsync();
         
         if (!exchanges.Any())
-            return NotFound(new ErrorViewModel(404, "Any exchange was found", "Any exchange was found"));
+            return NotFound(new ErrorViewModel(404, "Any exchange was found", "Nenhuma corretora encontrada"));
         
         return Ok(exchanges);
     }
     
-    [HttpGet]
+    [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     [Authorize]
-    public async Task<IActionResult> GetById([FromQuery] Guid id)
+    public async Task<IActionResult> GetById(Guid id)
     {
         var exchange = await _exchangeService.GetByIdAsync(id);
         
         if (exchange == null)
-            return NotFound(new ErrorViewModel(404, "Any exchange was found", "Any exchange was found"));
+            return NotFound(new ErrorViewModel(404, "Any exchange was found", "Nenhuma corretora encontrada"));
         
         return Ok(exchange);
     }
@@ -48,13 +48,13 @@ public class ExchangeController : Controller
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    [Authorize(Policy = "Adm")]
+    [Authorize(Policy = "AdmPolicy")]
     public async Task<IActionResult> Post(ExchangeInputModel exchangeInputModel)
     {
         var exchange = await _exchangeService.GetByNameAsync(exchangeInputModel.Name);
 
         if (exchange != null)
-            return BadRequest(new ErrorViewModel(400, "Exchange already exists", "Exchange already exists"));
+            return BadRequest(new ErrorViewModel(400, "Exchange already exists", "Corretora já existe"));
 
         var newExchange = await _exchangeService.CreateAsync(exchangeInputModel);
 
@@ -64,13 +64,13 @@ public class ExchangeController : Controller
     [HttpPut]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    [Authorize(Policy = "Adm")]
-    public async Task<IActionResult> Put(Guid id, ExchangeInputModel exchangeInputModel)
+    [Authorize(Policy = "AdmPolicy")]
+    public async Task<IActionResult> Put([FromQuery] Guid id, ExchangeInputModel exchangeInputModel)
     {
         var exchange = await _exchangeService.GetByIdAsync(id);
 
-        if (exchange != null)
-            return NotFound(new ErrorViewModel(400, "Exchange already exists", "Exchange already exists"));
+        if (exchange == null)
+            return NotFound(new ErrorViewModel(400, "Exchange already exists", "Nenhuma corretora encontrada"));
 
         await _exchangeService.UpdateAsync(exchange, exchangeInputModel);
 
@@ -80,13 +80,13 @@ public class ExchangeController : Controller
     [HttpDelete]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    [Authorize(Policy = "Adm")]
+    [Authorize(Policy = "AdmPolicy")]
     public async Task<IActionResult> Delete([FromQuery] Guid id)
     {
         var exchange = await _exchangeService.GetByIdAsync(id);
 
         if (exchange == null)
-            return NotFound(new ErrorViewModel(404, "Exchange not found", "Exchange not found"));
+            return NotFound(new ErrorViewModel(404, "Exchange not found", "Corretora não encontrada"));
 
         await _exchangeService.DeleteAsync(exchange);
 

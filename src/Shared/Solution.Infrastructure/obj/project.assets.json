@@ -2281,6 +2281,7 @@
     "net8.0": [
       "Microsoft.EntityFrameworkCore >= 8.0.6",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.6",
+      "Microsoft.EntityFrameworkCore.Relational >= 8.0.6",
       "Pomelo.EntityFrameworkCore.MySql >= 8.0.2",
       "Solution.Core >= 1.0.0"
     ]
@@ -2338,6 +2339,10 @@
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
+            "target": "Package",
+            "version": "[8.0.6, )"
+          },
+          "Microsoft.EntityFrameworkCore.Relational": {
             "target": "Package",
             "version": "[8.0.6, )"
           },

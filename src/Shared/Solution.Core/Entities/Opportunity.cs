@@ -24,7 +24,7 @@ public class Opportunity : Entity
         get;
         private set;
     }
-    public Coin Coin
+    public Crypto Crypto
     {
         get;
         private set;

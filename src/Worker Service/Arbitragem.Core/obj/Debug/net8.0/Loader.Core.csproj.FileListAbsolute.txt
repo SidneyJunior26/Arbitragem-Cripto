@@ -59,3 +59,5 @@
 /Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Core/obj/Debug/net8.0/refint/Loader.Core.dll
 /Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Core/obj/Debug/net8.0/Loader.Core.pdb
 /Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Core/obj/Debug/net8.0/ref/Loader.Core.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Core/bin/Debug/net8.0/Solution.Infrastructure.dll
+/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Core/bin/Debug/net8.0/Solution.Infrastructure.pdb

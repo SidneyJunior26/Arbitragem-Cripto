@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "FtLIjPoDxjFFXIzLDztc+jec74c9grEIClHrQp5Op8RMWFswd7AMXM57aGXnC/Bms4trBlOQ6pLqoMlvM6+8lA==",
+  "dgSpecHash": "rJ/NFFUomq1WhdzKeF9A+qhXhm/n4U6aPYO2pB6rGHJB3CjKjos4L7Br1zvPDx4a2vwJNvMfSXPnc6nLtFjh7Q==",
   "success": true,
   "projectFilePath": "/Users/sidneyjunior/Projects/Arbitragem/src/Calculator Service/Arbitrage_Calculator.Application/Arbitrage_Calculator.Application.csproj",
   "expectedPackageFiles": [
     "/Users/sidneyjunior/.nuget/packages/microsoft.entityframeworkcore/8.0.6/microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.6/microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.6/microsoft.entityframeworkcore.analyzers.8.0.6.nupkg.sha512",
-    "/Users/sidneyjunior/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.2/microsoft.entityframeworkcore.relational.8.0.2.nupkg.sha512",
+    "/Users/sidneyjunior/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.6/microsoft.entityframeworkcore.relational.8.0.6.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/microsoft.extensions.caching.memory/8.0.0/microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

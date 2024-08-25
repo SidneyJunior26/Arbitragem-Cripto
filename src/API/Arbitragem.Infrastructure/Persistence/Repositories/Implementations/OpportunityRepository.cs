@@ -17,9 +17,10 @@ public class OpportunityRepository : IOpportunityRepository
     public async Task<List<Opportunity>> GetAllAsync()
     {
         return await _context.Opportunities
-            .OrderByDescending(ob => ob.DifferencePercentage)
-            .Include(ob => ob.ExchangeToBuy)
-            .Include(ob => ob.ExchangeToSell)
+            .OrderByDescending(o => o.DifferencePercentage)
+            .Include(o => o.Crypto)
+            .Include(o => o.ExchangeToBuy)
+            .Include(o => o.ExchangeToSell)
             .ToListAsync();
     }
 

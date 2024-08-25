@@ -28,6 +28,10 @@ public class ExchangeConfigurations : IEntityTypeConfiguration<Exchange>
         builder
             .Property(e => e.Name)
             .IsRequired();
+        
+        builder
+            .Property(e => e.ExchangeUrl)
+            .IsRequired();
 
         builder
             .Property(e => e.ApiUrl)
@@ -38,6 +42,11 @@ public class ExchangeConfigurations : IEntityTypeConfiguration<Exchange>
 
         builder
             .Property(e => e.ApiSecretKey);
+        
+        builder
+            .Property(e => e.Fee)
+            .HasDefaultValue(0.0)
+            .IsRequired();
 
         builder
             .HasMany(e => e.OpportunitiesToBuy)

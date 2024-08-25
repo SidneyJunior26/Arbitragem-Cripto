@@ -19,11 +19,9 @@ public class ExchangeRepository : IExchangeRepository
         return _context.Exchanges.ToListAsync();
     }
 
-    public async Task<Guid> GetById(string name)
+    public async Task<Exchange> GetByNameAsync(string name)
     {
-        var exchange = await _context.Exchanges.SingleOrDefaultAsync(e => e.Name == name);
-
-        return exchange.Id;
+        return await _context.Exchanges.SingleOrDefaultAsync(e => e.Name == name);
     }
 }
 

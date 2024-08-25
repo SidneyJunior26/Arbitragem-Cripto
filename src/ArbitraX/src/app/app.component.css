@@ -1,0 +1,90 @@
+.container {
+  width: auto;
+  height: 100vh;
+  background: #0e1117;
+}
+
+.div-hide {
+  display: flex;
+  justify-content: end;
+}
+
+.container-login {
+  width: auto;
+  height: 100vh;
+  background: #0e1117;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div-logo-login {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.login {
+  font-family: Roboto-Condensed-Bold !important;
+  letter-spacing: 2px;
+  color: whitesmoke;
+}
+
+.modal-login {
+  width: 50vh;
+  background-color: #1a1c1c;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 50px 40px 50px;
+}
+
+.div-company-name {
+  display: flex;
+  justify-content: center;
+}
+
+.img-logo {
+  width: 200px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.drawer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.drawer-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.button-list {
+  width: 100%;
+}
+
+.button-list-adm {
+  margin-top: 5px;
+}
+
+.listitem {
+  margin-bottom: 5px;
+}
+
+.adm-expansion {
+  height: auto !important;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.logout-button,
+.adm-button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}

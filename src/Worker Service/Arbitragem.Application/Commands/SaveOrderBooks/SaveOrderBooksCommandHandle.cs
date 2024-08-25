@@ -17,16 +17,15 @@ public class SaveOrderBooksCommandHandle : IRequestHandler<SaveOrderBooksCommand
         if (request.OrderBook.Any())
         {
             var olderOrderBook = await _orderBookRepository
-                .GetListBySymbolsAndExchangeAndSide(request.OrderBook[0].Coin.Symbol, request.OrderBook[0].ExchangeId,
-                    request.OrderBook[0].Side);
+                .GetListBySymbolsAndExchangeAndSide(request.Symbol, request.OrderBook[0].ExchangeId);
 
-            if (olderOrderBook != null)
+            if (olderOrderBook.Any())
                 _orderBookRepository.DeleteOrdersBooksList(olderOrderBook);
 
             await _orderBookRepository.CreateOrderBooksListAsync(request.OrderBook);
-        }
 
-        await _orderBookRepository.SaveChangesAsync();
+            await _orderBookRepository.SaveChangesAsync();
+        }
 
         return Unit.Value;
     }

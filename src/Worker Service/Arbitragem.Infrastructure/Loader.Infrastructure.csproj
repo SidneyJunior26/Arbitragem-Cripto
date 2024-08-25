@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="2.5.0" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
     <PackageReference Include="MySql.Data" Version="8.4.0" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
@@ -17,26 +19,24 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Exchanges\" />
     <None Remove="Exchanges\Interfaces\" />
     <None Remove="Exchanges\Implementations\" />
     <None Remove="Persistence\" />
     <None Remove="Persistence\Repositories\" />
-    <None Remove="Exchanges\Response\" />
-    <None Remove="Utils\" />
+    <None Remove="Services\" />
+    <None Remove="Kafka\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Exchanges\" />
-    <Folder Include="Exchanges\Interfaces\" />
-    <Folder Include="Exchanges\Implementations\" />
     <Folder Include="Persistence\" />
-    <Folder Include="Persistence\Repositories\" />
-    <Folder Include="Exchanges\Response\" />
-    <Folder Include="Utils\" />
+    <Folder Include="Services\" />
+    <Folder Include="Kafka\Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Arbitragem.Core\Loader.Core.csproj" />
     <ProjectReference Include="..\..\Shared\Solution.Core\Solution.Core.csproj" />
     <ProjectReference Include="..\..\Shared\Solution.Infrastructure\Solution.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Persistence\Repositories\ArbitrationRepository.cs" />
   </ItemGroup>
 </Project>

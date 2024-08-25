@@ -14,8 +14,9 @@ public class CoinRepository : ICoinRepository
         _context = context;
     }
     
-    public async Task<List<Coin>> GetAll()
+    public async Task<Crypto> GetById(Guid id)
     {
-        return await _context.Coins.ToListAsync();
+        return await _context.Cryptos
+            .SingleOrDefaultAsync(c => c.Id == id);
     }
 }

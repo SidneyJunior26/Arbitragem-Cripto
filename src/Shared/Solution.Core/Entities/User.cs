@@ -28,10 +28,21 @@ public class User : Entity
         UpdateDate = DateTime.Now;
     }
 
-    public void Update(string name, string email)
+    public void Update(string name, string email, bool trial)
     {
         Name = name;
         Email = email;
+
+        if (Trial && !trial)
+        {
+            TrialExpiration = null;
+        }
+        else if (!Trial && trial)
+        {
+            TrialExpiration = DateTime.Now.AddDays(3);
+        }
+        
+        Trial = trial;
 
         UpdateDate = DateTime.Now;
     }

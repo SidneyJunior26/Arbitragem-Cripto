@@ -22,6 +22,7 @@ public class UserService : IUserService
             newUserInputModel.Trial);
 
         await _userRepository.CreateAsync(user);
+        await _userRepository.SaveChangesAsync();
 
         return user;
     }
@@ -44,7 +45,7 @@ public class UserService : IUserService
     public async Task UpdateAsync(User user, UpdateUserInputModel updateUserInputModel)
     {
         user.Update(updateUserInputModel.Name,
-            updateUserInputModel.Email);
+            updateUserInputModel.Email, updateUserInputModel.Trial);
 
         await _userRepository.SaveChangesAsync();
     }

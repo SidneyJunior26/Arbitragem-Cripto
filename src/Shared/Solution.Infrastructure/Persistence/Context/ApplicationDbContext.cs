@@ -11,7 +11,7 @@ public partial class ApplicationDbContext : DbContext
     {
     }
 
-    public virtual DbSet<Coin> Coins { get; set; }
+    public virtual DbSet<Crypto> Cryptos { get; set; }
     public virtual DbSet<CoinNetwork> CoinNetworks { get; set; }
     public virtual DbSet<Exchange> Exchanges { get; set; }
     public virtual DbSet<Network> Networks { get; set; }
@@ -19,6 +19,8 @@ public partial class ApplicationDbContext : DbContext
     public virtual DbSet<Opportunity> Opportunities { get; set; }
     public virtual DbSet<AdmConfiguration> AdmConfigurations { get; set; }
     public virtual DbSet<User> Users { get; set; }
+    public virtual DbSet<Dolar> Dolar { get; set; }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         if (!optionsBuilder.IsConfigured) {

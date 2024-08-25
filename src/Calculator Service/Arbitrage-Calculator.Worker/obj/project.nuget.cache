@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "jkJdgmh9KHohTQ1T73O2+cyXgQf4nQCLAQJ3drHDhMnnNI/WWEOGFUjWTBHppHHSZ30+1fA8hc9wqE8qd9tzRg==",
+  "dgSpecHash": "+IwWAG4lXSfPOKexD+8gS07A+fa68Eg40a07IINhAR0D83lU4kjNHyWi28/mM/I1rozx+gLo6oLJt8NhowTnjA==",
   "success": true,
   "projectFilePath": "/Users/sidneyjunior/Projects/Arbitragem/src/Calculator Service/Arbitrage-Calculator.Worker/Arbitrage-Calculator.csproj",
   "expectedPackageFiles": [
+    "/Users/sidneyjunior/.nuget/packages/confluent.kafka/2.5.0/confluent.kafka.2.5.0.nupkg.sha512",
+    "/Users/sidneyjunior/.nuget/packages/librdkafka.redist/2.5.0/librdkafka.redist.2.5.0.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/microsoft.entityframeworkcore/8.0.6/microsoft.entityframeworkcore.8.0.6.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/microsoft.entityframeworkcore.abstractions/8.0.6/microsoft.entityframeworkcore.abstractions.8.0.6.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/microsoft.entityframeworkcore.analyzers/8.0.6/microsoft.entityframeworkcore.analyzers.8.0.6.nupkg.sha512",
-    "/Users/sidneyjunior/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.2/microsoft.entityframeworkcore.relational.8.0.2.nupkg.sha512",
+    "/Users/sidneyjunior/.nuget/packages/microsoft.entityframeworkcore.relational/8.0.6/microsoft.entityframeworkcore.relational.8.0.6.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/microsoft.extensions.caching.abstractions/8.0.0/microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/microsoft.extensions.caching.memory/8.0.0/microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
@@ -41,6 +43,7 @@
     "/Users/sidneyjunior/.nuget/packages/pomelo.entityframeworkcore.mysql/8.0.2/pomelo.entityframeworkcore.mysql.8.0.2.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/system.diagnostics.diagnosticsource/8.0.0/system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/system.diagnostics.eventlog/8.0.0/system.diagnostics.eventlog.8.0.0.nupkg.sha512",
+    "/Users/sidneyjunior/.nuget/packages/system.memory/4.5.0/system.memory.4.5.0.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/system.text.encodings.web/8.0.0/system.text.encodings.web.8.0.0.nupkg.sha512",
     "/Users/sidneyjunior/.nuget/packages/system.text.json/8.0.0/system.text.json.8.0.0.nupkg.sha512"
   ],

@@ -1,29 +1,52 @@
 ﻿<Properties StartupConfiguration="{9BA46108-1A18-4982-A867-4A797493A56A}|Arbitragem.Worker">
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Infrastructure/Exchanges/Implementations/CoinGeckoService.cs" relfile="Arbitragem.Infrastructure/Exchanges/Implementations/CoinGeckoService.cs" line="19" column="9" />
+      <Breakpoint enabled="false" file="/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Worker/Worker.cs" relfile="Arbitragem.Worker/Worker.cs" line="37" column="17" />
+      <Breakpoint enabled="false" file="/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Worker/Worker.cs" relfile="Arbitragem.Worker/Worker.cs" line="43" column="17" />
+      <Breakpoint enabled="false" file="/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Worker/Worker.cs" relfile="Arbitragem.Worker/Worker.cs" line="46" column="17" />
+      <Breakpoint enabled="false" file="/Users/sidneyjunior/Projects/Arbitragem/src/Worker Service/Arbitragem.Infrastructure/Exchanges/Implementations/BinanceService.cs" relfile="Worker Service/Arbitragem.Infrastructure/Exchanges/Implementations/BinanceService.cs" line="39" column="9" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.ItemProperties.Loader.Loader.Worker PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Arbitrage.Arbitrage-Calculator PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Worker Service/Arbitragem.Infrastructure/Exchanges/Implementations/BrasilBitcoinService.cs">
+    <Files>
+      <File FileName="API/Arbitragem.API/Controllers/CryptoController.cs" Line="1" Column="1" />
+      <File FileName="Worker Service/Arbitragem.Application/Queries/GetOrderBooks/GetOrderBooksExchangesQueryHandler.cs" Line="223" Column="1" />
+      <File FileName="Worker Service/Arbitragem.Infrastructure/Exchanges/Implementations/OkxService.cs" Line="17" Column="1" />
+      <File FileName="Worker Service/Arbitragem.Infrastructure/Exchanges/Implementations/BrasilBitcoinService.cs" Line="42" Column="5" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Arbitragem" selected="True" />
+          <Node name="Arbitragem" expanded="True">
+            <Node name="Loader" expanded="True">
+              <Node name="Loader.Application">
+                <Node name="Queries" expanded="True">
+                  <Node name="GetOrderBooks" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Loader.Infrastructure">
+                <Node name="Exchanges" expanded="True">
+                  <Node name="Implementations" expanded="True">
+                    <Node name="BrasilBitcoinService.cs" selected="True" />
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Infrastructure/Exchanges/Implementations/CoinGeckoService.cs" relfile="Arbitragem.Infrastructure/Exchanges/Implementations/CoinGeckoService.cs" line="19" column="9" />
-      <Breakpoint file="/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Worker/Worker.cs" relfile="Arbitragem.Worker/Worker.cs" line="37" column="17" />
-      <Breakpoint file="/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Worker/Worker.cs" relfile="Arbitragem.Worker/Worker.cs" line="43" column="17" />
-      <Breakpoint file="/Users/sidneyjunior/Projects/Arbitragem/src/Arbitragem.Worker/Worker.cs" relfile="Arbitragem.Worker/Worker.cs" line="46" column="17" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <DisabledProjects>
     <String>Solution.Core/Solution.Infrastructure/Solution.Infrastructure.csproj</String>
     <String>ArbitraX.API/ArbitraX.Application/ArbitraX.Application.csproj</String>
     <String>ArbitraX.API/ArbitraX.Infrastructure/ArbitraX.Infrastructure.csproj</String>
     <String>ArbitraX.API/ArbitraX.Core/ArbitraX.Core.csproj</String>
   </DisabledProjects>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

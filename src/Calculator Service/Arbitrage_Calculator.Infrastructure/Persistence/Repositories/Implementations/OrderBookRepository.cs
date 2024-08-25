@@ -17,7 +17,7 @@ public class OrderBookRepository : IOrderBookRepository
     public async Task<List<OrderBook>> GetOrderBooksByCoin(Guid coinId)
     {
         return await _context.OrderBooks
-            .Where(ob => ob.CoinId == coinId)
+            .Where(ob => ob.CoinId == coinId && ob.Order == 0)
             .ToListAsync();
     }
 }

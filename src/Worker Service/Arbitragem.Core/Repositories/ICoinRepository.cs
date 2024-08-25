@@ -4,5 +4,5 @@ namespace ArbitraX.Core.Repositories;
 
 public interface ICoinRepository
 {
-    Task<List<Coin>> GetAll();
+    Task<List<Crypto>> GetAll();
 }

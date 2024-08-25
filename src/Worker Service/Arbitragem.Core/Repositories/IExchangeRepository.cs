@@ -5,6 +5,6 @@ namespace ArbitraX.Core.Repositories;
 public interface IExchangeRepository
 {
     Task<List<Exchange>> GetAll();
-    Task<Guid> GetById(string name);
+    Task<Exchange> GetByNameAsync(string name);
 }
 

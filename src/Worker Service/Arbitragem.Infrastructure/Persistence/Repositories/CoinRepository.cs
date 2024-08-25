@@ -14,9 +14,11 @@ public class CoinRepository : ICoinRepository
         _context = context;
     }
 
-    public async Task<List<Coin>> GetAll()
+    public async Task<List<Crypto>> GetAll()
     {
-        return await _context.Coins.ToListAsync();
+        return await _context.Cryptos
+            .Where(c => c.Active == true)
+            .ToListAsync();
     }
 }
 

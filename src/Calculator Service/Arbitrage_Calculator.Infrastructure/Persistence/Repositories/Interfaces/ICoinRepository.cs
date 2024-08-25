@@ -4,5 +4,5 @@ namespace Arbitrage_Calculator.Infrastructure.Persistence.Repositories.Interface
 
 public interface ICoinRepository
 {
-    Task<List<Coin>> GetAll();
+    Task<Crypto> GetById(Guid id);
 }

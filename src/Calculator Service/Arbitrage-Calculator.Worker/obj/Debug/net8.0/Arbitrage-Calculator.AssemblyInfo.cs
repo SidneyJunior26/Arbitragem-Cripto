@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Arbitrage-Calculator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49b7675824f91c97a2c20c25f751f19bc16c6f12")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+59517e3ac12d6b054cb92f2848fd774ac62065ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("Arbitrage-Calculator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Arbitrage-Calculator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -32,10 +32,10 @@ public class OrderBookRepository : IOrderBookRepository
         throw new NotImplementedException();
     }
 
-    public async Task<List<OrderBook>> GetListBySymbolsAndExchangeAndSide(string symbol, Guid exchangeId, Side side)
+    public async Task<List<OrderBook>> GetListBySymbolsAndExchangeAndSide(string symbol, Guid exchangeId)
     {
         return await _context.OrderBooks
-            .Where(o => o.Coin.Symbol == symbol && o.ExchangeId == exchangeId && o.Side == side)
+            .Where(o => o.Crypto.Symbol == symbol && o.ExchangeId == exchangeId)
             .ToListAsync();
     }
 

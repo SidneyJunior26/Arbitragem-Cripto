@@ -5,10 +5,13 @@ using Solution.Infrastructure.Persistence.Context;
 
 namespace Arbitragem.Infrastructure.Persistence.Repositories.Implementations;
 
-public class UserRepository : RepositoryBase<ApplicationDbContext>, IUserRepository
+public class UserRepository : IUserRepository
 {
-    public UserRepository(ApplicationDbContext context) : base(context)
+    private readonly ApplicationDbContext _context;
+
+    public UserRepository(ApplicationDbContext context)
     {
+        _context = context;
     }
 
     public async Task CreateAsync(User user)
@@ -18,7 +21,9 @@ public class UserRepository : RepositoryBase<ApplicationDbContext>, IUserReposit
 
     public async Task<List<User>> GetAllAsync()
     {
-        return await _context.Users.ToListAsync();
+        return await _context.Users
+            .OrderBy(u => u.Name)
+            .ToListAsync();
     }
 
     public async Task<User> GetByIdAsync(Guid id)
@@ -36,5 +41,10 @@ public class UserRepository : RepositoryBase<ApplicationDbContext>, IUserReposit
     public void Delete(User user)
     {
         _context.Users.Remove(user);
+    }
+    
+    public async Task SaveChangesAsync()
+    {
+        await _context.SaveChangesAsync();
     }
 }

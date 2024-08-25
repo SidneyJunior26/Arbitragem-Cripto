@@ -38,6 +38,9 @@ public class OrderBookConfigurations : IEntityTypeConfiguration<OrderBook>
             .IsRequired();
 
         builder
+            .Property(ob => ob.Total);
+
+        builder
             .Property(ob => ob.ExchangeId)
             .IsRequired();
 
@@ -50,7 +53,7 @@ public class OrderBookConfigurations : IEntityTypeConfiguration<OrderBook>
             .IsRequired();
 
         builder
-            .HasOne(ob => ob.Coin)
+            .HasOne(ob => ob.Crypto)
             .WithMany(c => c.OrderBooks)
             .HasForeignKey(ob => ob.CoinId);
     }

@@ -11,16 +11,18 @@ namespace Arbitragem.API.Controllers;
 public class UserController : Controller
 {
     private readonly IUserService _userService;
+    private readonly ISecurityService _securityService;
 
-    public UserController(IUserService userService)
+    public UserController(IUserService userService, ISecurityService securityService)
     {
         _userService = userService;
+        _securityService = securityService;
     }
 
     [HttpGet]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    [Authorize(Policy = "Adm")]
+    [Authorize(Policy = "AdmPolicy")]
     public async Task<IActionResult> GetAll()
     {
         var users = await _userService.GetAllAsync();
@@ -31,11 +33,11 @@ public class UserController : Controller
         return Ok(users);
     }
     
-    [HttpGet]
+    [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    [Authorize]
-    public async Task<IActionResult> GetById([FromQuery] Guid id)
+    [Authorize(Policy = "AdmPolicy")]
+    public async Task<IActionResult> GetById(Guid id)
     {
         var user = await _userService.GetByIdAsync(id);
 
@@ -45,16 +47,16 @@ public class UserController : Controller
         return Ok(user);
     }
     
-    [HttpGet]
+    [HttpGet("getBy")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    [Authorize]
+    [Authorize(Policy = "AdmPolicy")]
     public async Task<IActionResult> GetByEmail([FromQuery] string email)
     {
         var user = await _userService.GetByEmailAsync(email);
 
         if (user == null)
-            return NotFound(new ErrorViewModel(404, "Any user was found", "Any user was found"));
+            return NotFound(new ErrorViewModel(404, "Any user was found", "Usuário não encontrado"));
 
         return Ok(user);
     }
@@ -62,13 +64,15 @@ public class UserController : Controller
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    [Authorize(Policy = "Adm")]
+    [Authorize(Policy = "AdmPolicy")]
     public async Task<IActionResult> Post(NewUserInputModel newUserInputModel)
     {
         var user = await _userService.GetByEmailAsync(newUserInputModel.Email);
 
         if (user != null)
             return BadRequest(new ErrorViewModel(400, "User already exists", "User already exists"));
+
+        newUserInputModel = newUserInputModel with { Password = _securityService.Encrypt(newUserInputModel.Password) };
 
         var newUSer = await _userService.CreateAsync(newUserInputModel);
 
@@ -78,7 +82,7 @@ public class UserController : Controller
     [HttpPut]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    [Authorize(Policy = "Adm")]
+    [Authorize(Policy = "AdmPolicy")]
     public async Task<IActionResult> Put([FromQuery] Guid id, UpdateUserInputModel updateUserInputModel)
     {
         var user = await _userService.GetByIdAsync(id);
@@ -94,7 +98,7 @@ public class UserController : Controller
     [HttpDelete]
     [ProducesResponseType(StatusCodes.Status204NoContent)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-    [Authorize(Policy = "Adm")]
+    [Authorize(Policy = "AdmPolicy")]
     public async Task<IActionResult> Put([FromQuery] Guid id)
     {
         var user = await _userService.GetByIdAsync(id);

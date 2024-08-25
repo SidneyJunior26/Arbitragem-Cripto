@@ -8,6 +8,16 @@ public class AdmConfiguration : Entity
     {
     }
 
+    public AdmConfiguration(int minSpread)
+    {
+        Id = Guid.NewGuid();
+
+        MinSpread = minSpread;
+
+        RegisterDate = DateTime.Now;
+        UpdateDate = DateTime.Now;
+    }
+
     public void Update(int minSpread)
     {
         MinSpread = minSpread;

@@ -17,9 +17,11 @@ public class ExchangeService : IExchangeService
     public async Task<Exchange> CreateAsync(ExchangeInputModel exchangeInputModel)
     {
         var exchange = new Exchange(exchangeInputModel.Name,
+            exchangeInputModel.ExchangeUrl,
             exchangeInputModel.ApiUrl,
             exchangeInputModel.ApiKey,
-            exchangeInputModel.ApiSecretKey);
+            exchangeInputModel.ApiSecretKey,
+            exchangeInputModel.Fee);
 
         await _exchangeRepository.CreateAsync(exchange);
         await _exchangeRepository.SaveChangesAsync();
@@ -45,9 +47,11 @@ public class ExchangeService : IExchangeService
     public async Task UpdateAsync(Exchange exchange, ExchangeInputModel exchangeInputModel)
     { 
         exchange.Update(exchangeInputModel.Name,
+            exchangeInputModel.ExchangeUrl,
             exchangeInputModel.ApiUrl,
             exchangeInputModel.ApiKey,
-            exchangeInputModel.ApiSecretKey);
+            exchangeInputModel.ApiSecretKey,
+            exchangeInputModel.Fee);
 
         await _exchangeRepository.SaveChangesAsync();
     }

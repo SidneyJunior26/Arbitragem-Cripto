@@ -121,6 +121,10 @@
               "target": "Package",
               "version": "[8.0.6, )"
             },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[8.0.2, )"
@@ -245,6 +249,9 @@
             "projectReferences": {
               "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Core/Solution.Core.csproj": {
                 "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Core/Solution.Core.csproj"
+              },
+              "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Infrastructure/Solution.Infrastructure.csproj": {
+                "projectPath": "/Users/sidneyjunior/Projects/Arbitragem/src/Shared/Solution.Infrastructure/Solution.Infrastructure.csproj"
               }
             }
           }
@@ -332,6 +339,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[2.5.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.3.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.6, )"

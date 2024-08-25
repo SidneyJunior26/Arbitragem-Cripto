@@ -17,6 +17,6 @@ public class AdmRepository : IAdmRepository
     public async Task<AdmConfiguration> GetAsync()
     {
         return await _context.AdmConfigurations
-            .SingleOrDefaultAsync();
+            .FirstOrDefaultAsync();
     }
 }

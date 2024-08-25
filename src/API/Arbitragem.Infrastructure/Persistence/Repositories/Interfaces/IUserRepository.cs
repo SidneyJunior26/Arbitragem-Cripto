@@ -2,7 +2,7 @@ using Solution.Core.Entities;
 
 namespace Arbitragem.Infrastructure.Persistence.Repositories.Interfaces;
 
-public interface IUserRepository : IRepositoryBase
+public interface IUserRepository
 {
     Task CreateAsync(User user);
     
@@ -11,4 +11,6 @@ public interface IUserRepository : IRepositoryBase
     Task<User> GetByEmailAsync(string email);
 
     void Delete(User user);
+
+    Task SaveChangesAsync();
 }

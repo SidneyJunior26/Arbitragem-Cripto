@@ -3,7 +3,7 @@
 public class CoinNetwork : Entity
 {
     public Guid CoinId { get; set; }
-    public Coin Coin { get; set; }
+    public Crypto Crypto { get; set; }
     public Guid NetworkId { get; set; }
     public Network Network { get; set; }
 

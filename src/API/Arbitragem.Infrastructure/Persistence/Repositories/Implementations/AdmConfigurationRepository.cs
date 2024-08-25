@@ -5,10 +5,13 @@ using Solution.Infrastructure.Persistence.Context;
 
 namespace Arbitragem.Infrastructure.Persistence.Repositories.Implementations;
 
-public class AdmConfigurationRepository : RepositoryBase<ApplicationDbContext>, IAdmConfigurationRepository
+public class AdmConfigurationRepository : IAdmConfigurationRepository
 {
-    public AdmConfigurationRepository(ApplicationDbContext context) : base(context)
+    private readonly ApplicationDbContext _context;
+
+    public AdmConfigurationRepository(ApplicationDbContext context)
     {
+        _context = context;
     }
     
     public async Task<AdmConfiguration> GetAsync()
@@ -21,5 +24,10 @@ public class AdmConfigurationRepository : RepositoryBase<ApplicationDbContext>, 
     {
         return await _context.AdmConfigurations
             .SingleOrDefaultAsync(c => c.Id == id);
+    }
+    
+    public async Task SaveChangesAsync()
+    {
+        await _context.SaveChangesAsync();
     }
 }

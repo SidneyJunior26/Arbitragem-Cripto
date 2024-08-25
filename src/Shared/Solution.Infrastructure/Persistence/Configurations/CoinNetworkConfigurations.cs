@@ -27,7 +27,7 @@ public class CoinNetworkConfigurations : IEntityTypeConfiguration<CoinNetwork>
             .Property(c => c.UpdateDate)
             .IsRequired();
 
-        builder.HasOne(cn => cn.Coin)
+        builder.HasOne(cn => cn.Crypto)
             .WithMany(c => c.CoinNetworks)
             .HasForeignKey(cn => cn.CoinId);
 

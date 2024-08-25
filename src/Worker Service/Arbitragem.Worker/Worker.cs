@@ -34,19 +34,14 @@ public class Worker : BackgroundService
 
                 _logger.LogInformation("Getting Exchanges Order Books: {time}", DateTimeOffset.Now);
 
-                var inicioRequisicoes = DateTime.Now;
                 try
                 {
                     orderBooksExchanges = await mediator.Send(getOrderBooksQuery);
                 }
                 catch (Exception ex)
                 {
-
+                    _logger.LogError($"Error during get orderBooks - {ex.Message}");
                 }
-                var fimRequisicoes = DateTime.Now;
-
-                var tempoPercorrido = DateTime.Compare(fimRequisicoes, inicioRequisicoes);
-                var tempoPercorridoInvertido = DateTime.Compare(inicioRequisicoes, fimRequisicoes);
 
                 _logger.LogInformation("Order Books amount: {qtde} - {time}", orderBooksExchanges.Count, DateTimeOffset.Now);
 

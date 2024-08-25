@@ -1,0 +1,199 @@
+<div class="container">
+  <div [hidden]="opportunities.length == 0 && !noneOpportunity">
+    <div class="div-header">
+      <mat-form-field>
+        <mat-label>Filtrar</mat-label>
+        <input
+          matInput
+          (keyup)="applyFilter($event)"
+          placeholder="Ex. BTC"
+          #input
+        /> </mat-form-field
+      ><app-loading
+        class="small-loading"
+        *ngIf="loadingOpportunities"
+      ></app-loading>
+    </div>
+    <table
+      mat-table
+      [dataSource]="dsOpportunities"
+      multiTemplateDataRows
+      class="mat-elevation-z8"
+    >
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let opportunity">
+          <img
+            src="../../../assets/Cryptos/{{ opportunity.symbol }}.png"
+            width="30px"
+          />
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="symbol">
+        <th mat-header-cell *matHeaderCellDef>Moeda</th>
+        <td mat-cell *matCellDef="let opportunity">
+          {{ opportunity.symbol }} - {{ opportunity.name }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef>Data</th>
+        <td mat-cell *matCellDef="let opportunity">
+          {{ opportunity.date | date : "dd/MM HH:mm" }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="valueToBuy">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center">
+          Vl. Compra
+        </th>
+        <td
+          mat-cell
+          *matCellDef="let opportunity"
+          style="color: greenyellow; text-align: center"
+        >
+          {{ opportunity.valueToBuy | currency : "BRL" : "symbol" : "1.3-3" }}
+          <br />
+          <span class="dolar-value"
+            >({{
+              opportunity.valueToBuy / dolar
+                | currency : "USD" : "symbol" : "1.3-3"
+            }})</span
+          >
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="valueToSell">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center">
+          Vl. Venda
+        </th>
+        <td
+          mat-cell
+          *matCellDef="let opportunity"
+          style="color: red; text-align: center"
+        >
+          {{ opportunity.valueToSell | currency : "BRL" : "symbol" : "1.3-3" }}
+          <br />
+          <span class="dolar-value"
+            >({{
+              opportunity.valueToSell / dolar
+                | currency : "USD" : "symbol" : "1.3-3"
+            }})</span
+          >
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="differencePercentage">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center">
+          Spread
+        </th>
+        <td
+          mat-cell
+          *matCellDef="let opportunity"
+          [ngClass]="{
+            'high-percentage': opportunity.differencePercentage > 9,
+            'low-percentage': opportunity.differencePercentage <= 9
+          }"
+          style="text-align: center"
+        >
+          <b>{{
+            opportunity.differencePercentage / 100 | percent : "1.2-2"
+          }}</b>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="fee">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center">
+          Taxa de Negoc.
+        </th>
+        <td
+          mat-cell
+          *matCellDef="let opportunity"
+          style="color: yellow; text-align: center"
+        >
+          {{ opportunity.fee / 100 | percent : "1.2-2" }}
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="exchangeToBuy">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center">
+          Corretora Compra
+        </th>
+        <td mat-cell *matCellDef="let opportunity" style="text-align: center">
+          <a href="{{ opportunity.exchangeToBuyUrl }}" target="_blank">
+            <img
+              src="../../../assets/Exchanges/{{
+                opportunity.exchangeToBuyName
+              }}.svg"
+              width="30px"
+              matTooltip="{{ opportunity.exchangeToBuyName }}"
+              matTooltipPosition="below"
+            />
+          </a>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="exchangeToSell">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center">
+          Corretora Venda
+        </th>
+        <td mat-cell *matCellDef="let opportunity" style="text-align: center">
+          <a href="{{ opportunity.exchangeToSellUrl }}" target="_blank">
+            <img
+              src="../../../assets/Exchanges/{{
+                opportunity.exchangeToSellName
+              }}.svg"
+              width="30px"
+              matTooltip="{{ opportunity.exchangeToSellName }}"
+              matTooltipPosition="below"
+            />
+          </a>
+        </td>
+      </ng-container>
+
+      <ng-container matColumnDef="showOrderBook">
+        <th mat-header-cell *matHeaderCellDef style="text-align: center">
+          Order Book
+        </th>
+        <td mat-cell *matCellDef="let opportunity" style="text-align: center">
+          <button
+            mat-stroked-button
+            (click)="
+              showOrderBooks(
+                opportunity.symbol,
+                opportunity.cryptoId,
+                opportunity.name,
+                opportunity.exchangeToBuyId,
+                opportunity.exchangeToBuyName,
+                opportunity.exchangeToSellId,
+                opportunity.exchangeToSellName,
+                opportunity.differencePercentage / 100
+              )
+            "
+            matTooltip="Visualizar Order Book"
+            matTooltipPosition="below"
+          >
+            <mat-icon>remove_red_eye</mat-icon>
+            Visualizar
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let opportunity; columns: displayedColumns"></tr>
+    </table>
+    <mat-paginator
+      [length]="opportunities.length"
+      [pageSize]="10"
+      showFirstLastpnl-buttons
+      #opportunitiesPaginator
+    ></mat-paginator>
+  </div>
+  <div [hidden]="!noneOpportunity">
+    <h1>Nenhuma Oportunidade atualmente</h1>
+  </div>
+  <div [hidden]="opportunities.length > 0 && !noneOpportunity">
+    <app-loading></app-loading>
+  </div>
+</div>

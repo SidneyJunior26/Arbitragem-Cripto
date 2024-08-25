@@ -17,7 +17,6 @@
     <None Remove="Commands\SaveOrderBooks\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Commands\" />
     <Folder Include="Queries\" />
     <Folder Include="Queries\GetCoins\" />
     <Folder Include="Commands\SaveCoins\" />

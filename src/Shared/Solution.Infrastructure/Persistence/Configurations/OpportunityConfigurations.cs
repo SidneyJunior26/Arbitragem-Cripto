@@ -42,7 +42,7 @@ public class OpportunityConfigurations : IEntityTypeConfiguration<Opportunity>
             .IsRequired();
 
         builder
-            .HasOne(a => a.Coin)
+            .HasOne(a => a.Crypto)
             .WithMany(c => c.Opportunities)
             .HasForeignKey(a => a.CoinId);
 

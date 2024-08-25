@@ -5,10 +5,13 @@ using Solution.Infrastructure.Persistence.Context;
 
 namespace Arbitragem.Infrastructure.Persistence.Repositories.Implementations;
 
-public class ExchangeRepository : RepositoryBase<ApplicationDbContext>, IExchangeRepository
+public class ExchangeRepository : IExchangeRepository
 {
-    public ExchangeRepository(ApplicationDbContext context) : base(context)
+    private readonly ApplicationDbContext _context;
+
+    public ExchangeRepository(ApplicationDbContext context)
     {
+        _context = context;
     }
 
     public async Task CreateAsync(Exchange exchange)
@@ -38,5 +41,10 @@ public class ExchangeRepository : RepositoryBase<ApplicationDbContext>, IExchang
     public void Delete(Exchange exchange)
     {
         _context.Exchanges.Remove(exchange);
+    }
+    
+    public async Task SaveChangesAsync()
+    {
+        await _context.SaveChangesAsync();
     }
 }
